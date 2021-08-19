@@ -3,6 +3,12 @@
   --primary-green: #6ee7b7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--primary-dark);
   color: var(--primary-green);
@@ -10,31 +16,47 @@ body {
 
 h1 {
   text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 .container {
-  width: 50%;
+  width: 400px;
   margin: auto;
 }
 
 input,
 label {
   display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+label {
+  font-size: large;
 }
 
 input {
-  margin-bottom: 0.5rem;
-  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: large;
 }
 
 #check-number {
   display: block;
-  margin-top: 1rem;
-  margin: auto;
+  margin: 0.5rem auto;
   background: transparent;
   color: var(--primary-green);
   border-color: var(--primary-green);
   border-width: medium;
   padding: 0.5rem;
   border-radius: 0.3rem;
+}
+
+#output-box {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: x-large;
+  text-align: center;
 }
